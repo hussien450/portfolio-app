@@ -36,6 +36,42 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import ahmedlogo from "./ahmedlogo.png";
+import IMG20251024WA0003 from "./IMG-20251024-WA0003.jpg";
+import IMG20251024WA0004 from "./IMG-20251024-WA0004.jpg";
+import IMG20251024WA0005 from "./IMG-20251024-WA0005.jpg";
+import IMG20251024WA0006 from "./IMG-20251024-WA0006.jpg";
+import IMG20251024WA0007 from "./IMG-20251024-WA0007.jpg";
+import IMG20251024WA0008 from "./IMG-20251024-WA0008.jpg";
+import IMG20251024WA0009 from "./IMG-20251024-WA0009.jpg";
+import IMG20251024WA0010 from "./IMG-20251024-WA0010.jpg";
+import IMG20251024WA0011 from "./IMG-20251024-WA0011.jpg";
+import IMG20251024WA0012 from "./IMG-20251024-WA0012.jpg";
+import IMG20251024WA0013 from "./IMG-20251024-WA0013.jpg";
+import IMG20251024WA0014 from "./IMG-20251024-WA0014.jpg";
+import IMG20251024WA0015 from "./IMG-20251024-WA0015.jpg";
+import IMG20251024WA0016 from "./IMG-20251024-WA0016.jpg";
+import IMG20251024WA0017 from "./IMG-20251024-WA0017.jpg";
+import IMG20251024WA0018 from "./IMG-20251024-WA0018.jpg";
+import IMG20251024WA0019 from "./IMG-20251024-WA0019.jpg";
+import IMG20251024WA0020 from "./IMG-20251024-WA0020.jpg";
+import IMG20251024WA0021 from "./IMG-20251024-WA0021.jpg";
+import IMG20251024WA0022 from "./IMG-20251024-WA0022.jpg";
+import IMG20251024WA0023 from "./IMG-20251024-WA0023.jpg";
+import IMG20251024WA0024 from "./IMG-20251024-WA0024.jpg";
+import IMG20251024WA0025 from "./IMG-20251024-WA0025.jpg";
+import IMG20251024WA0026 from "./IMG-20251024-WA0026.jpg";
+import IMG20251024WA0027 from "./IMG-20251024-WA0027.jpg";
+import IMG20251024WA0028 from "./IMG-20251024-WA0028.jpg";
+import IMG20251024WA0029 from "./IMG-20251024-WA0029.jpg";
+import IMG20251024WA0030 from "./IMG-20251024-WA0030.jpg";
+import IMG20251024WA0031 from "./IMG-20251024-WA0031.jpg";
+import IMG20251024WA0032 from "./IMG-20251024-WA0032.jpg";
+import IMG20251024WA0033 from "./IMG-20251024-WA0033.jpg";
+import IMG20251024WA0034 from "./IMG-20251024-WA0034.jpg";
+import IMG20251024WA0035 from "./IMG-20251024-WA0035.jpg";
+import IMG20251024WA0036 from "./IMG-20251024-WA0036.jpg";
+import react from "./react.svg";
+import right_arrow_dark from "./right-arrow-dark.png";
 
 export const assets = {
     ahmedlogo,
@@ -76,28 +112,64 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+    IMG20251024WA0003,
+    IMG20251024WA0004,
+    IMG20251024WA0005,
+    IMG20251024WA0006,
+    IMG20251024WA0007,
+    IMG20251024WA0008,
+    IMG20251024WA0009,
+    IMG20251024WA0010,
+    IMG20251024WA0011,
+    IMG20251024WA0012,
+    IMG20251024WA0013,
+    IMG20251024WA0014,
+    IMG20251024WA0015,
+    IMG20251024WA0016,
+    IMG20251024WA0017,
+    IMG20251024WA0018,
+    IMG20251024WA0019,
+    IMG20251024WA0020,
+    IMG20251024WA0021,
+    IMG20251024WA0022,
+    IMG20251024WA0023,
+    IMG20251024WA0024,
+    IMG20251024WA0025,
+    IMG20251024WA0026,
+    IMG20251024WA0027,
+    IMG20251024WA0028,
+    IMG20251024WA0029,
+    IMG20251024WA0030,
+    IMG20251024WA0031,
+    IMG20251024WA0032,
+    IMG20251024WA0033,
+    IMG20251024WA0034,
+    IMG20251024WA0035,
+    IMG20251024WA0036,
+    react,
+    right_arrow_dark,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "Facility Management",
+    description: "Operation and maintenance of educational administrative buildings In Madinah",
+    bgImage: IMG20251024WA0010,
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Project Manager",
+    description: "Imar Al-Asimah Contracting Company for General Contracting, Maintenance, and Operation – Madinah, Saudi Arabia",
+    bgImage: IMG20251024WA0036,
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Project Manager",
+    description: "Saleh Ayedha Al-Dhawaibi General Contracting, Operation & Maintenance Co. – Madinah, Saudi Arabia",
+    bgImage: IMG20251024WA0009,
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Construction of Boundary Wall ",
+    description: " Infrastructure / Construction of Boundary Wall Saeed Bin Al-Musayyib School (Madinah)",
+    bgImage: IMG20251024WA0023,
   },
 ];
 
@@ -147,7 +219,7 @@ export const infoList = [
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Worked on more than 10 projects",
+    description: "Worked on more than 10 projects as a Project Manager in the field of Facility Management and Construction",
   },
 ];
 

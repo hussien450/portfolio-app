@@ -17,9 +17,9 @@ function About() {
       >
         <div className="w-64 sm:w-80 rounded-3xl max-w-none">
           <Image
-            src={assets.user_image}
+            src={assets.IMG20251024WA0003}
             alt="user"
-            className=" w-full lg:w-130 lg:h-145  rounded-3xl"
+            className=" w-full  lg:h-145  rounded-3xl"
           />
         </div>
         <div className="flex-1">
@@ -48,7 +48,7 @@ function About() {
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:boxShadowBlack"
                 key={index}
               >
-                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
+                <Image src={tool} alt="tool" className="w-5 sm:w-10" />
               </li>
             ))}
           </ul>

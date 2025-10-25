@@ -15,7 +15,7 @@ function Header() {
       <h3
         className={`flex items-end gap-2 text-xl md:text-2xl mb-1 ${ovo.className}`}
       >
-        Hi i'm Ahmed Abdelaziz
+        Hi i'm Eng. Ahmed Abdelaziz
         <Image src={assets.hand_icon} alt="" className="w-6 " />
       </h3>
       <h1 className={`text-3xl sm:text-6xl lg:text-[50px] ${ovo.className}`}>
