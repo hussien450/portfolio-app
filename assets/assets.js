@@ -27,6 +27,7 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
+import call_icon from "./call.png";
 import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
@@ -70,6 +71,7 @@ import IMG20251024WA0033 from "./IMG-20251024-WA0033.jpg";
 import IMG20251024WA0034 from "./IMG-20251024-WA0034.jpg";
 import IMG20251024WA0035 from "./IMG-20251024-WA0035.jpg";
 import IMG20251024WA0036 from "./IMG-20251024-WA0036.jpg";
+import footer_img from "./footer.jpg";
 import react from "./react.svg";
 import right_arrow_dark from "./right-arrow-dark.png";
 
@@ -105,6 +107,7 @@ export const assets = {
   close_black,
   close_white,
   web_icon,
+  call_icon,
   mobile_icon,
   ui_icon,
   graphics_icon,
@@ -147,6 +150,7 @@ export const assets = {
     IMG20251024WA0035,
     IMG20251024WA0036,
     react,
+    footer_img,
     right_arrow_dark,
 };
 
