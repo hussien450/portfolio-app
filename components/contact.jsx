@@ -1,9 +1,50 @@
+'use client';
+
 import { ovo } from "../app/fonts";
 import { assets } from "../assets/assets";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef();
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    emailjs
+      .sendForm(
+        'service_pli4c42', 
+        'template_suynuu6', 
+        form.current,
+        {
+          publicKey: 'VQR-lT0piH251kcOS', 
+        },
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setStatus('Message Sent Successfully!');
+          setFormData({ name: '', email: '', message: '' });
+          setTimeout(() => {
+            setStatus('');
+          }, 3000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setStatus('Failed to send message. Please try again.');
+        },
+      );
+  };
+
   return (
     <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className={`text-center mb-2 text-lg ${ovo.className}`}>
@@ -31,7 +72,7 @@ function Contact() {
           </div>
         </div>
         <div className="flex-1">
-          <form className="flex flex-col gap-4">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
             <div className="flex flex-col">
               <label htmlFor="name" className="mb-2">
                 Your Name
@@ -39,6 +80,10 @@ function Contact() {
               <input
                 type="text"
                 id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
                 className="border border-gray-400 rounded-lg p-3"
               />
             </div>
@@ -49,6 +94,10 @@ function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
                 className="border border-gray-400 rounded-lg p-3"
               />
             </div>
@@ -58,6 +107,10 @@ function Contact() {
               </label>
               <textarea
                 id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
                 rows="5"
                 className="border border-gray-400 rounded-lg p-3"
               ></textarea>
@@ -66,9 +119,10 @@ function Contact() {
               type="submit"
               className="flex items-center justify-center gap-2 bg-black text-white rounded-lg p-3 cursor-pointer"
             >
-              Send Message
-              <Image src={assets.right_arrow_white} alt="arrow" className="w-5" />
+              {status === 'Sending...' ? 'Sending...' : 'Send Message'}
+              {status !== 'Sending...' && <Image src={assets.right_arrow_white} alt="arrow" className="w-5" />}
             </button>
+            {status && <p className="text-center mt-4">{status}</p>}
           </form>
         </div>
       </div>
