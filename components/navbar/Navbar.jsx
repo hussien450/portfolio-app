@@ -70,9 +70,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex items-center gap-4">
-          <button>
-            <Image src={assets.moon_icon} alt="" className="w-6" />
-          </button>
+          
           <a
             className={`hidden lg:flex items-center gap-3 px-10 
             py-2.5 border-2 rounded-full ml-4 ${ovo.className}`}
