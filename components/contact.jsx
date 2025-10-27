@@ -26,7 +26,7 @@ function Contact() {
         'template_twcidkm', 
         form.current,
         {
-          publicKey: 'VQR-lT0piH251kcOS', 
+          publicKey: 'MD9149yDBVOhNefP-', 
         },
       )
       .then(
