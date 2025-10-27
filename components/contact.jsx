@@ -1,19 +1,15 @@
-"use client";
+'use client';
 
 import { ovo } from "../app/fonts";
 import { assets } from "../assets/assets";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [status, setStatus] = useState("");
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,25 +18,30 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus('Sending...');
 
     emailjs
-      .sendForm("service_nl3aipb", "template_suynuu6", form.current, {
-        publicKey: "VQR-lT0piH251kcOS",
-      })
+      .sendForm(
+        'service_66utwvr', 
+        'template_twcidkm', 
+        form.current,
+        {
+          publicKey: 'VQR-lT0piH251kcOS', 
+        },
+      )
       .then(
         () => {
-          console.log("SUCCESS!");
-          setStatus("Message Sent Successfully!");
-          setFormData({ name: "", email: "", message: "" });
+          console.log('SUCCESS!');
+          setStatus('Message Sent Successfully!');
+          setFormData({ name: '', email: '', message: '' });
           setTimeout(() => {
-            setStatus("");
+            setStatus('');
           }, 3000);
         },
         (error) => {
-          console.log("FAILED...", error.text);
-          setStatus("Failed to send message. Please try again.");
-        }
+          console.log('FAILED...', error.text);
+          setStatus('Failed to send message. Please try again.');
+        },
       );
   };
 
@@ -118,14 +119,8 @@ function Contact() {
               type="submit"
               className="flex items-center justify-center gap-2 bg-black text-white rounded-lg p-3 cursor-pointer"
             >
-              {status === "Sending..." ? "Sending..." : "Send Message"}
-              {status !== "Sending..." && (
-                <Image
-                  src={assets.right_arrow_white}
-                  alt="arrow"
-                  className="w-5"
-                />
-              )}
+              {status === 'Sending...' ? 'Sending...' : 'Send Message'}
+              {status !== 'Sending...' && <Image src={assets.right_arrow_white} alt="arrow" className="w-5" />}
             </button>
             {status && <p className="text-center mt-4">{status}</p>}
           </form>
