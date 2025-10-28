@@ -24,11 +24,12 @@ function About() {
         </div>
         <div className="flex-1">
           <p className={`mb-10 max-w-2xl ${ovo.className}`}>
-            Experienced Project Manager and Certified PMP® professional with
-            over 7 years of proven expertise in managing, operating, and
-            maintaining educational and governmental buildings.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, esse nihil sunt, ipsam quaerat blanditiis eligendi aliquid expedita porro, a deserunt exercitationem molestias ipsa repellat deleniti consectetur! Amet, et facilis.
-          </p>
+            Experienced Project Manager and Certified PMP® professional with over 7 years of proven expertise in managing,
+operating, and maintaining educational and governmental buildings. Currently working with Imar Al-Asimah
+Contracting Company, a contractor for Rua Al Madinah Holding Company Previously worked with a contracting
+company assigned by the government entity Tatweer Buildings Company (TBC), I have successfully delivered projects
+worth over SAR 90 million, covering more than 500 schools and government facilities in various regions. 
+</p>
           <ul className={`grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl`}>
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <li
